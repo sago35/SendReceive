@@ -46,6 +46,9 @@ alink="#22eeee" style="margin-right:28px;margin-left:28px;margin-top:20px;">
 <!--	-------------------------------------------------------------------- -->
 <h2>Send And Receive MIDI<h2>
 
+repo: <a href="https://github.com/sago35/SendReceive">https://github.com/sago35/SendReceive</a><br>
+fork from:  <a href="https://github.com/mikatahara/SendReceive/">https://github.com/mikatahara/SendReceive/</a><br>
+
 <!--	------------------------------------------------------------------ -->
 <div class="sans">
 Select MIDI Port<br>
@@ -93,10 +96,10 @@ function stop_start()
 <!--	-------------------------------------------------------------------- -->
 <br><br>
 <div class="sans" style="position: absolute; top:500px;">
-Output MIDI:<br>
-<textarea name="contests" cols="128" rows="4" id="doc_ment0"></textarea> <br>
+Output MIDI: `90 3C 40` to NoteOn(0, 0, midi.C4, 0x40), `80 3C 40` to NoteOff(0, 0, midi.C4, 0x40)<br>
+<textarea name="contests" cols="128" rows="4" id="doc_ment0">90 3C 40</textarea> <br>
 <button onclick="sendmidi_id(ex_id0)">send</button><br><br>
-<textarea name="contests" cols="128" rows="4" id="doc_ment1"></textarea> <br>
+<textarea name="contests" cols="128" rows="4" id="doc_ment1">80 3C 40</textarea> <br>
 <button onclick="sendmidi_id(ex_id1)">send</button><br><br>
 <textarea name="contests" cols="128" rows="4" id="doc_ment2"></textarea> <br>
 <button onclick="sendmidi_id(ex_id2)">send</button><br> <br>
